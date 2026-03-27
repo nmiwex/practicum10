@@ -49,12 +49,10 @@ def draw_pattern():
     turtle.setup(650, 650)
     turtle.title('Кафельная плитка')
     turtle.bgcolor('#F5FFFA')
-
     turtle.tracer(0)
 
     size = 70
 
-    # Каждая скобка это один квадрат (направление_разреза, цвет_1, цвет_2)
     grid = [
         [(1, M, D), (1, D, M), (1, M, L), (2, L, M), (2, M, D), (2, D, M)],
         [(1, L, M), (1, M, D), (1, D, M), (2, M, D), (2, D, M), (2, M, L)],
@@ -64,7 +62,6 @@ def draw_pattern():
         [(2, M, D), (2, D, M), (2, M, L), (1, L, M), (1, M, D), (1, D, M)],
     ]
 
-    # Координаты для старта (левый верхний угол)
     start_x = -(size * 3)
     start_y = (size * 3)
 
